@@ -1,0 +1,37 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ALU.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ALUControl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALUControl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/EX_Forwarding_unit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_Forwarding_unit
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/EX_pipe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module EX_pipe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/Hazard_detection.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Hazard_detection
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ID_pipe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ID_pipe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/IF_pipe_stage.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IF_pipe_stage
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/control.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module control
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/data_memory.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_memory
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.srcs/sources_1/new/instruction_mem.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module instruction_mem
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mips_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mips_32
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mux.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux2
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mux4.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mux4
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/pipe_reg.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_reg
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/pipe_reg_en.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pipe_reg_en
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/register_file.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register_file
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/sign_extend.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module sign_extend
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/anany/Downloads/tb_mips_32.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_mips_32_grading
+WARNING: [VRFC 10-986] literal value truncated to fit in 3 bits [C:/Users/anany/Downloads/tb_mips_32.v:105]

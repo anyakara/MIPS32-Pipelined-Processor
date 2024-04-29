@@ -1,0 +1,32 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+*PC_time_1060* = {  49}
+*PC_time_1080* = {  49}
+*PC_time_1120* = {  51}
+*PC_time_1140* = {  51}
+*PC_time_1220* = {  57}
+*PC_time_1240* = {  58}
+*PC_time_1280* = {  65}
+*PC_time_1300* = {  66}
+*NO_DEPENDENCY_ANDI* =  	{1}
+*NO_DEPENDENCY_NOR* =   	{1}
+*NO_DEPENDENCY_SLT* =   	{1}
+*NO_DEPENDENCY_SLL* =   	{1}
+*NO_DEPENDENCY_SRL* =   	{1}
+*NO_DEPENDENCY_SRA* =   	{1}
+*NO_DEPENDENCY_XOR* =   	{1}
+*NO_DEPENDENCY_MULT* =  	{1}
+*NO_DEPENDENCY_DIV* =   	{1}
+*ANDI_No_Forwarding* =        {1}
+*Forward_EX_MEM_to_EX_B* =    {1}
+*Forward_MEM_WB_to_EX_A1* = 	{1}
+*SLL_No_Forwarding* = 		{1}
+*Forward_EX_MEM_to_EX_A* = 	{1}
+*Forward_MEM_WB_to_EX_A2* = 	{1}
+*XOR_No_Forwarding* = 		{1}
+*MULT_No_Forwarding* = 		{1}
+*Forward_MEM_WB_to_EX_B* = 	{1}
+*DATA_HAZARD_RS_DEPENDENCY* =     {1}
+*DATA_HAZARD_RT_DEPENDENCY* = 	{1}
+*CONTROL_HAZARD_BRANCH* = 	{1}
+*CONTROL_HAZARD_JUMP* = 	{1}

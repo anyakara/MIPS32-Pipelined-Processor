@@ -1,0 +1,23 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/anany/Downloads/tb_mips_32.v,1709686359,verilog,,,,tb_mips_32_grading,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ALU.v,1709651765,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ALUControl.v,,ALU,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ALUControl.v,1709652694,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/EX_Forwarding_unit.v,,ALUControl,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/EX_Forwarding_unit.v,1709707481,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/EX_pipe_stage.v,,EX_Forwarding_unit,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/EX_pipe_stage.v,1709699490,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/Hazard_detection.v,,EX_pipe_stage,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/Hazard_detection.v,1709654762,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ID_pipe_stage.v,,Hazard_detection,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ID_pipe_stage.v,1709710853,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/IF_pipe_stage.v,,ID_pipe_stage,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/IF_pipe_stage.v,1709705255,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/control.v,,IF_pipe_stage,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/control.v,1709651765,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/data_memory.v,,control,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/data_memory.v,1709688844,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.srcs/sources_1/new/instruction_mem.v,,data_memory,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mips_32.v,1709709862,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mux.v,,mips_32,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mux.v,1709651765,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mux4.v,,mux2,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mux4.v,1709651764,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/pipe_reg.v,,mux4,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/pipe_reg.v,1709651765,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/pipe_reg_en.v,,pipe_reg,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/pipe_reg_en.v,1709651765,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/register_file.v,,pipe_reg_en,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/register_file.v,1709651765,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/sign_extend.v,,register_file,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/sign_extend.v,1709651765,verilog,,C:/Users/anany/Downloads/tb_mips_32.v,,sign_extend,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/anany/EECS112L/lab4/Lab4/Lab4.srcs/sources_1/new/instruction_mem.v,1709685146,verilog,,C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/mips_32.v,,instruction_mem,,,,,,,,

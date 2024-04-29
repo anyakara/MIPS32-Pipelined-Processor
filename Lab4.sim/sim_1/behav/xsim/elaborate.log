@@ -1,0 +1,40 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto bb5e8c5a9f7c441cbdabe56285a08fb8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_mips_32_grading_behav xil_defaultlib.tb_mips_32_grading xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'sel' [C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ID_pipe_stage.v:82]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 1 for port 'reg_dst' [C:/Users/anany/EECS112L/lab4/Lab4/Lab4.sim/ID_pipe_stage.v:127]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.instruction_mem
+Compiling module xil_defaultlib.mux2(mux_width=10)
+Compiling module xil_defaultlib.IF_pipe_stage
+Compiling module xil_defaultlib.pipe_reg_en(WIDTH=10)
+Compiling module xil_defaultlib.pipe_reg_en(WIDTH=32)
+Compiling module xil_defaultlib.register_file
+Compiling module xil_defaultlib.sign_extend
+Compiling module xil_defaultlib.mux2(mux_width=5)
+Compiling module xil_defaultlib.mux2(mux_width=1)
+Compiling module xil_defaultlib.mux2(mux_width=2)
+Compiling module xil_defaultlib.control
+Compiling module xil_defaultlib.ID_pipe_stage
+Compiling module xil_defaultlib.pipe_reg(WIDTH=32)
+Compiling module xil_defaultlib.pipe_reg(WIDTH=5)
+Compiling module xil_defaultlib.pipe_reg(WIDTH=1)
+Compiling module xil_defaultlib.pipe_reg(WIDTH=2)
+Compiling module xil_defaultlib.Hazard_detection
+Compiling module xil_defaultlib.ALUControl
+Compiling module xil_defaultlib.mux4
+Compiling module xil_defaultlib.mux2
+Compiling module xil_defaultlib.ALU
+Compiling module xil_defaultlib.EX_pipe_stage
+Compiling module xil_defaultlib.EX_Forwarding_unit
+Compiling module xil_defaultlib.data_memory
+Compiling module xil_defaultlib.mips_32
+Compiling module xil_defaultlib.tb_mips_32_grading
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_mips_32_grading_behav

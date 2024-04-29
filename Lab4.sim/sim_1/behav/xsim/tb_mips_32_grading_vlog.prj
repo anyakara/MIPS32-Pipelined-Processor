@@ -1,0 +1,26 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../ALU.v" \
+"../../../ALUControl.v" \
+"../../../EX_Forwarding_unit.v" \
+"../../../EX_pipe_stage.v" \
+"../../../Hazard_detection.v" \
+"../../../ID_pipe_stage.v" \
+"../../../IF_pipe_stage.v" \
+"../../../control.v" \
+"../../../data_memory.v" \
+"../../../../Lab4.srcs/sources_1/new/instruction_mem.v" \
+"../../../mips_32.v" \
+"../../../mux.v" \
+"../../../mux4.v" \
+"../../../pipe_reg.v" \
+"../../../pipe_reg_en.v" \
+"../../../register_file.v" \
+"../../../sign_extend.v" \
+"../../../../../../../Downloads/tb_mips_32.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
