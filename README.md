@@ -50,3 +50,43 @@ The purpose of this project is to solidify the understanding of important princi
 My goal as a student is to understand this material, but more beyond my goal as a researcher, as an engineer and as a scientist is to devise or implement noval architectures that accelerate computing for tasks mentioned. A follow-up repository includes the building blocks for high-level designs of Graphics Processing Units which achieve amazing throughput for data intensive operations and Tensor Processing Units which also employ matrix operations to make the process of vector math (scaling / dot products) efficient for large-scale implementation.
 
 <img width="604" alt="Screenshot 2024-06-03 at 11 16 00 PM" src="https://github.com/anyakara/mips32-processor/assets/66985689/4152c605-a42d-40f8-8f25-542b20453159">
+
+Sample Snippet Code (template example and not original):
+```
+module matrix_multiplication #(
+    parameter DATA_WIDTH = 16,
+    parameter MATRIX_SIZE = 4
+)(
+    input clk,
+    input reset,
+    input [DATA_WIDTH-1:0] A [MATRIX_SIZE-1:0][MATRIX_SIZE-1:0],
+    input [DATA_WIDTH-1:0] B [MATRIX_SIZE-1:0][MATRIX_SIZE-1:0],
+    output reg [DATA_WIDTH-1:0] C [MATRIX_SIZE-1:0][MATRIX_SIZE-1:0]
+);
+
+integer i, j, k;
+reg [DATA_WIDTH-1:0] temp;
+
+always @(posedge clk or posedge reset) begin
+    if (reset) begin
+        for (i = 0; i < MATRIX_SIZE; i = i + 1) begin
+            for (j = 0; j < MATRIX_SIZE; j = j + 1) begin
+                C[i][j] <= 0;
+            end
+        end
+    end else begin
+        for (i = 0; i < MATRIX_SIZE; i = i + 1) begin
+            for (j = 0; j < MATRIX_SIZE; j = j + 1) begin
+                temp = 0;
+                for (k = 0; k < MATRIX_SIZE; k = k + 1) begin
+                    temp = temp + A[i][k] * B[k][j];
+                end
+                C[i][j] <= temp;
+            end
+        end
+    end
+end
+
+endmodule
+```
+This module is an example matrix multiplication unit written in Verilog as a precurser to architectures at use more space for data processing in memory, and keep all logical components close to data for optimized performance.
