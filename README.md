@@ -40,5 +40,7 @@ Brief: In this stage, instructions are read from memory utilizing the address in
 
 ## Write Back
 
+## Applications & Next Steps
+The purpose of this project is to solidify the understanding of important principles and building blocks of computer architecture using existing architectures and specifications to design one particular configuration for purpose of design, testing, and minor enhancements. The future holds bright for in-memory and near-memory architectures that move away from the concept of sequential processing for large-scale data intensive processes. The likelihood of encountering a sequential processor that is continued to be used in the near decade for any sort of large scale computing task will be few. While they do stand as optimal, fast architectures to run a typical user's workload for a day's job, utilizing such for a massive task, such as decoding genomes to detect disease or fold proteins utilizing their chemical make-up, or process high-quality camera footage in real-time mission critical systems like drones, or safety focused self-driving systems require alternative architectures. 
 
-Some material may be adapted from EECS 112L professor and course material for in-depth context of this project.
+My goal as a student is to understand this material, buy my goal as a researcher, as an engineer and as a scientist is to devise or implement noval architectures that accelerate computing for tasks mentioned. A follow-up repository includes the building blocks for high-level designs of Graphics Processing Units which achieve amazing throughput for data intensive operations and Tensor Processing Units which also employ matrix operations to make the process of vector math (scaling / dot products) efficient for large-scale implementation.
