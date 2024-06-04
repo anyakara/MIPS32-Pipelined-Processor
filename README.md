@@ -40,6 +40,10 @@ The instruction segment includes the instruction fetch and decode piepline regis
 
 ## Write Back
 
+## Timing Diagram for Reference for DUT (Design Under Test)
+
+<img width="615" alt="Screenshot 2024-06-03 at 11 25 04 PM" src="https://github.com/anyakara/mips32-processor/assets/66985689/603f11fe-d4d6-4c77-94d5-dd49c835b7fd">
+
 ## Applications & Next Steps
 The purpose of this project is to solidify the understanding of important principles and building blocks of computer architecture using existing architectures and specifications to design one particular configuration for purpose of design, testing, and minor enhancements. The future holds bright for in-memory and near-memory architectures that move away from the concept of sequential processing for large-scale data intensive processes. The likelihood of encountering a sequential processor that is continued to be used in the near decade for any sort of large scale computing task will be few. While they do stand as optimal, fast architectures to run a typical user's workload for a day's job, utilizing such for a massive task, such as decoding genomes to detect disease or fold proteins utilizing their chemical make-up, or process high-quality camera footage in real-time mission critical systems like drones, or safety focused self-driving systems require alternative architectures. 
 
