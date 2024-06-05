@@ -5,8 +5,6 @@ module mips_32(
     input clk, reset,  
     output[31:0] result
     );
-    
-// define all the wires here. You need to define more wires than the ones you did in Lab2
 
 wire en; // inputs
 wire [9:0] branch_address;
@@ -52,7 +50,7 @@ wire id_ex_mem_write;
 wire id_ex_alu_src;
 wire id_ex_reg_write;
 
-    wire [31:0] ex_mem_instr;
+wire [31:0] ex_mem_instr;
 wire [31:0] ex_mem_alu_result;
 
 wire [1:0] Forward_A;
@@ -86,9 +84,6 @@ wire mem_wb_mem_to_reg;
 
 // Build the pipeline as indicated in the lab manual
 
-///////////////////////////// Instruction Fetch    
-    // Complete your code here      
-
 IF_pipe_stage IF_unit
 (
 .clk(clk), // input
@@ -101,9 +96,6 @@ IF_pipe_stage IF_unit
 .pc_plus4(pc_plus4), // output
 .instr(instr) // output
 );
-
-///////////////////////////// IF/ID registers
-    // Complete your code here
 
 pipe_reg_en #(.WIDTH(10)) if_id_pipe_reg_inst_pc_plus4 // double check
 (.clk(clk),
@@ -120,9 +112,6 @@ pipe_reg_en #(.WIDTH(32)) if_id_pipe_reg_inst_instr // double check
 .flush(IF_Flush),
 .d(instr),
 .q(if_id_instr));
-
-///////////////////////////// Instruction Decode 
-	// Complete your code here
 
 ID_pipe_stage id_pipe_inst
 (.clk(clk), 
@@ -148,10 +137,7 @@ ID_pipe_stage id_pipe_inst
 .alu_src(alu_src),
 .reg_write(reg_write),
 .jump(jump));
-
-///////////////////////////// ID/EX registers 
-	// Complete your code here
-
+	
 pipe_reg #(.WIDTH(32)) if_id_instr_reg (.clk(clk), .reset(reset), .d(if_id_instr), .q(id_ex_instr));
 pipe_reg #(.WIDTH(32)) reg1_reg (.clk(clk), .reset(reset), .d(reg1), .q(id_ex_reg1));
 pipe_reg #(.WIDTH(32)) reg2_reg (.clk(clk), .reset(reset), .d(reg2), .q(id_ex_reg2));
@@ -164,9 +150,6 @@ pipe_reg #(.WIDTH(1)) mem_write_reg (.clk(clk), .reset(reset), .d(mem_write), .q
 pipe_reg #(.WIDTH(1)) alu_src_reg (.clk(clk), .reset(reset), .d(alu_src), .q(id_ex_alu_src));
 pipe_reg #(.WIDTH(1)) reg_write_reg (.clk(clk), .reset(reset), .d(reg_write), .q(id_ex_reg_write));
 
-///////////////////////////// Hazard_detection unit
-	// Complete your code here    
-
 Hazard_detection HA_unit_inst
 (.id_ex_mem_read(id_ex_mem_read),
 .id_ex_destination_reg(id_ex_destination_reg),
@@ -178,9 +161,6 @@ Hazard_detection HA_unit_inst
 .IF_Flush(IF_Flush)
 );
             
-///////////////////////////// Execution    
-	// Complete your code here
-
 EX_pipe_stage ex_pipe_stage_inst
 (.id_ex_instr(id_ex_instr),
 .reg1(id_ex_reg1),
@@ -196,9 +176,6 @@ EX_pipe_stage ex_pipe_stage_inst
 .alu_result(alu_result)
 );
 
-///////////////////////////// Forwarding unit
-	// Complete your code here 
-
 EX_Forwarding_unit ex_forward_inst
 (
 .ex_mem_reg_write(ex_mem_reg_write),
@@ -211,9 +188,6 @@ EX_Forwarding_unit ex_forward_inst
 .Forward_B(Forward_B)
 );
 
-///////////////////////////// EX/MEM registers
-	// Complete your code here 
-
 pipe_reg #(.WIDTH(32)) id_ex_instr_reg (.clk(clk), .reset(reset), .d(id_ex_instr), .q(ex_mem_instr));
 pipe_reg #(.WIDTH(5)) id_ex_destination_reg_reg (.clk(clk), .reset(reset), .d(id_ex_destination_reg), .q(ex_mem_destination_reg));
 pipe_reg #(.WIDTH(32)) alu_result_reg (.clk(clk), .reset(reset), .d(alu_result), .q(ex_mem_alu_result));
@@ -224,10 +198,6 @@ pipe_reg #(.WIDTH(1)) id_ex_mem_read_reg (.clk(clk), .reset(reset), .d(id_ex_mem
 pipe_reg #(.WIDTH(1)) id_ex_mem_write_reg (.clk(clk), .reset(reset), .d(id_ex_mem_write), .q(ex_mem_mem_write));
 pipe_reg #(.WIDTH(1)) id_ex_reg_write_reg (.clk(clk), .reset(reset), .d(id_ex_reg_write), .q(ex_mem_reg_write));
 
-  
-///////////////////////////// memory    
-	// Complete your code here
-
 data_memory data_mem
 (.clk(clk), // ex_mem_instr
 .mem_access_addr(ex_mem_alu_result),
@@ -236,19 +206,13 @@ data_memory data_mem
 .mem_read_en(ex_mem_mem_read),
 .mem_read_data(mem_read_data)
 );
-
-///////////////////////////// MEM/WB registers  
-	// Complete your code here
-
+	
 pipe_reg #(.WIDTH(32)) ex_mem_alu_result_reg (.clk(clk), .reset(reset), .d(ex_mem_alu_result), .q(mem_wb_alu_result));
 pipe_reg #(.WIDTH(32)) mem_read_data_reg (.clk(clk), .reset(reset), .d(mem_read_data), .q(mem_wb_mem_read_data));
 pipe_reg #(.WIDTH(1)) ex_mem_mem_to_reg_reg (.clk(clk), .reset(reset), .d(ex_mem_mem_to_reg), .q(mem_wb_mem_to_reg));
 pipe_reg #(.WIDTH(1)) ex_mem_reg_write_reg (.clk(clk), .reset(reset), .d(ex_mem_reg_write), .q(mem_wb_reg_write));
 pipe_reg #(.WIDTH(5)) ex_mem_destination_reg_reg (.clk(clk), .reset(reset), .d(ex_mem_destination_reg), .q(mem_wb_destination_reg));
 
-///////////////////////////// writeback    
-	// Complete your code here
-    
 mux2 #(.mux_width(32)) write_back_mux_inst
 (
 .a(mem_wb_alu_result),
