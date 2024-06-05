@@ -24,14 +24,8 @@ module ID_pipe_stage(
     output reg_write,
     output jump
     );
-    
-    // write your code here 
-    // Remember that we test if the branch is taken or not in the decode stage. 	
-    // maybe I don't need an always block -- maybe I need it, we'll have to see how this will turn out
 
-// for sign_extend comp
 wire [31:0] sign_extend_out;
-// for register_file component
 wire [31:0] reg_read_data_out_1;
 wire [31:0] reg_read_data_out_2;
 
@@ -43,10 +37,7 @@ wire alu_src_temp;
 wire reg_write_temp;
 wire branch;
 wire [4:0] reg_dst; // reg_dst
-
-
 wire pipeline_hazard_detection_signal;
-
 wire eq_test;
  
  assign pipeline_hazard_detection_signal = ((~Data_Hazard) | Control_Hazard);
@@ -69,20 +60,16 @@ register_file id_reg_file_inst
     .reg_read_data_1(reg1),  
     .reg_read_data_2(reg2)
     );
-
- 
+    
  sign_extend id_sign_extend
  (  .sign_ex_in(instr[15:0]),
     .sign_ex_out(imm_value));
-
-
+    
  mux2 #(.mux_width(5)) reg_dest_cal
     (   .a(instr[20:16]),
         .b(instr[15:11]),
         .sel(reg_dst),
         .y(destination_reg));
- 
-
  
  mux2 #(.mux_width(1)) mem_to_reg_mux
     (   .a(mem_to_reg_temp),
