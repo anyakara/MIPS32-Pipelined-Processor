@@ -19,8 +19,6 @@ reg [9:0] pc;
 wire [9:0] branch_mux_out;
 wire [9:0] jump_mux_out;
 
-
-// write your code here
 // assign pc_plus4 = pc + 10'b0000000100;
 assign pc_plus4 = pc + 10'b0000000100;
 
