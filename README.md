@@ -6,7 +6,7 @@ Pipelined implementation features a datapath that is divided into separate stage
 ## Project Overview
 Classically, these are split into five stages:
 - Instruction Fetch (IF): process the instruction from memory.
-- Instruction Decoding (D): read the registers while decoding the instruction).
+- Instruction Decoding (ID): read the registers while decoding the instruction).
 - Execution (EXE): perform the necessary operation or calculation of address.
 - Memory (MEM): access an operand in data memory (a clear incentive for forwarding techniques to be implemented to save clock cycles in implementation)
 - Write Back (WB): save the result into a register.
