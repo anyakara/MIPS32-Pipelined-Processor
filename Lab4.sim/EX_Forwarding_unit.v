@@ -14,7 +14,7 @@ module EX_Forwarding_unit(
     
     always @(*)  
     begin
-	// Write your code here that calculates the values of Forward_A and Forward_B
+	// Calculate the values of Forward_A and Forward_B
 	if ((ex_mem_reg_write) && (ex_mem_write_reg_addr != 4'b0) & (ex_mem_write_reg_addr == id_ex_instr_rs))
 	   Forward_A = 2'b10;
 	// Forward_B = 2'b00; // is this followed by default 
