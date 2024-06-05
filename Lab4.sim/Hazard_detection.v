@@ -10,7 +10,6 @@ module Hazard_detection(
     output reg IF_Flush
     );
         
-	// Copy the code of this module from the lab manual.  
 	always @ (*)
     begin
     if ((id_ex_mem_read == 1'b1) & (( id_ex_destination_reg == if_id_rs ) | (id_ex_destination_reg == if_id_rt )))
