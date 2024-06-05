@@ -16,9 +16,8 @@ wire [7:0] ALUControlIn;
   8'b00xxxxxx: ALU_Control=4'b0010; //addi, sw, lw
   8'b10100000: ALU_Control=4'b0010; //add
   8'b10100010: ALU_Control=4'b0110; //sub
-  
-  // Complete the casex from your code in Lab2
-  // changes start
+
+  // new changes
   8'b01xxxxxx: ALU_Control=4'b0110; // BEQ
   8'b10100111: ALU_Control=4'b1100; // NOR
   8'b10101010: ALU_Control=4'b0111; // SLT
@@ -28,7 +27,6 @@ wire [7:0] ALUControlIn;
   8'b10100110: ALU_Control=4'b0100; // XOR 
   8'b10011000: ALU_Control=4'b0101; // MULT
   8'b10011010: ALU_Control=4'b1011; // DIV
-  // changes end
 
   default: ALU_Control=4'b0000;  
   endcase  
