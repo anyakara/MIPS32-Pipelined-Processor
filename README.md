@@ -24,19 +24,17 @@ To avoid delay in pipeline, forwarding is used to ensure that particular data de
 While these mechnanisms ensure that instructions that are executing keep all stages busy, there are cases where **stalling** may be required, where the processor simply halts for a clock cycle or two to ensure that hazards are detected properly. This is done in the Hazard Detection unit of the processor pipeline.
 
 ## Instruction Fetch
-Brief: In this stage, instructions are read from memory utilizing the address in the PC and placed in IF/ID piepline registers. If the instruction is not of type branch or jump, the program_counter (PC) is incremented +4 and updated for next clock cycle. Otherwise, for branch and jump, branch address and jump address, calculated within a particular subunit are used to calculate the next address for program_counter. Select signals are used to trigger the combination for particular branch and jump addresses. The processor will not know which type of instruction is fetched, and thus must pass necessary information down pipeline for future use.
+In this stage, instructions are read from memory utilizing the address in the PC and placed in IF/ID piepline registers. If the instruction is not of type branch or jump, the program_counter (PC) is incremented +4 and updated for next clock cycle. Otherwise, for branch and jump, branch address and jump address, calculated within a particular subunit are used to calculate the next address for program_counter. Select signals are used to trigger the combination for particular branch and jump addresses. The processor will not know which type of instruction is fetched, and thus must pass necessary information down pipeline for future use.
 
 ## Instruction Decode
 The instruction segment includes the instruction fetch and decode piepline registers supplying a sixteen bit immediate field, with sign-extension to thirty-two bits and register numbers to read registers. Branch and jump addresses will be calculated here, and there is an equality test unit that helps determine if a branch is taken or not. It is important to pay attention to the read and write tasks with respect to clock. The register file operates in the way to use effectively two half clock cycles, with first half clock cycle reading and the second half clock cycle to trigger writing.
 
 ## Hazard Detection
-
+There are instances where we need to stall the pipeline. Specifically, when a branch instruction is in the Decode stage the next instruction after that would be in the Instruction Fetch stage. A NOP is inserted in the pipeline when there is a branch taken and we jump to another address and get rid of the instruction that is present in the IF stage.
 
 ## Execution
 
-
 ## Memory
-
 
 ## Write Back
 
