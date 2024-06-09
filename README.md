@@ -1,7 +1,7 @@
 # MIPS Pipelined Processor
 High-level block designs for MIPS 32 bit processor with pipelining & forwarding controls, hazard detection, and timing. Tested and verified in EECS 112L course on Organization of Computers. Designed to simulate current architecture for sequential processing with parallelized features introduced to increase efficiency.
 
-Pipelined implementation features a datapath that is divided into separate stages, steps that allow for techniques like forwarding and hazard detection to make the processor more efficient in executing more instructions in relative clock cycle. The primary goal of an implementation like this is to ensure that all stages of the pocessor are kept busy at all times with some instruction.
+Pipelined implementation features a datapath that is divided into separate stages, steps that allow for techniques like forwarding and hazard detection to make the processor more efficient in executing more instructions in relative clock cycle. The primary goal of an implementation like this is to ensure that all stages of the processor are kept busy at all times with some instruction.
 
 ## Project Overview
 Classically, these are split into five stages:
@@ -14,7 +14,7 @@ Classically, these are split into five stages:
 <img width="1071" alt="Screenshot 2024-06-03 at 10 52 52 PM" src="https://github.com/anyakara/mips32-processor/assets/66985689/b44277e3-5732-417d-870e-dfcd737ebb12">
 
 
-**Processor Design**: to handle the situations where instructions cannot execute in subsequent clock cycle due to data not being loaded for instance, the process utilizes hazard control systems. There are three main types of hazards that architectures like MIPS pipelined handle, these include:
+**Processor Design**: to handle the situations where instructions cannot execute in subsequent clock cycle due to data not being loaded for instance, the process utilizes hazard control systems. There are three main types of hazards that architectures like MIPS pipelined handle. These include:
 * Structural hazard
 * Data hazard
 * Control hazard
